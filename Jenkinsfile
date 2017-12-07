@@ -1,6 +1,6 @@
 properties([[$class: 'GithubProjectProperty', 
            displayName: '',
-           projectUrlStr: 'https://github.com/sashankadevops/MultiBranch.git/'], 
+           projectUrlStr: 'https://github.com/Demo-Project333/Rep1.git/'], 
            pipelineTriggers([githubPush()])])
 
 pipeline {
