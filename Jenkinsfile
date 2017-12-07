@@ -1,4 +1,9 @@
-                                
+#!/usr/bin/env groovy
+properties([
+    [$class: 'GithubProjectProperty',
+    displayName: '',
+    projectUrlStr: 'https://github.com/VeridicSolutions99/Veridic_Atlanta.git/'],
+    pipelineTriggers([githubPush()])])
 
 pipeline {
     agent any 
@@ -11,7 +16,7 @@ pipeline {
         }
         stage('Test'){
             steps {
-                echo "This is a Test Stagee" 
+                echo "This is a Test Stage" 
             }
         }
         stage('Deploy') {
@@ -20,4 +25,5 @@ pipeline {
             }
         }
     }
+
 }
